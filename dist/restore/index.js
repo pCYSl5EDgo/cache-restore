@@ -1033,7 +1033,7 @@ function createTempDirectory() {
                         }
                         tempDirectory = path.join(baseLocation, "actions", "temp");
                     }
-                    dest = path.join(tempDirectory, uuidV4["default"]());
+                    dest = path.join(tempDirectory, uuidV4());
                     return [4 /*yield*/, io.mkdirP(dest)];
                 case 1:
                     _a.sent();
