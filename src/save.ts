@@ -12,7 +12,10 @@ import * as utils from "./utils/actionUtils";
 async function run() {
     try {
         const state = utils.getCacheState();
-
+        if(state && state.cacheKey)
+            core.debug(state.cacheKey);
+        else
+            core.debug("empty!");
         // Inputs are re-evaluted before the post action, so we want the original key used for restore
         const primaryKey = core.getState(State.CacheKey);
         if (!primaryKey) {

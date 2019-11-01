@@ -1,5 +1,5 @@
 {
-  "name": "cache",
+  "name": "cache-restore",
   "version": "0.0.1",
   "private": true,
   "description": "Cache dependencies and build outputs",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/cache.git"
+    "url": "git+https://github.com/pCYSl5EDgo/cache-restore.git"
   },
   "keywords": [
     "actions",
@@ -38,6 +38,10 @@
     "jest-circus": "^24.7.1",
     "prettier": "1.18.2",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.5.1"
-  }
+    "typescript": "^3.6.4"
+  },
+  "bugs": {
+    "url": "https://github.com/actions/cache/issues"
+  },
+  "homepage": "https://github.com/actions/cache#readme"
 }

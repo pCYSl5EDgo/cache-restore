@@ -18,8 +18,7 @@ async function run() {
         core.debug(`Cache Path: ${cachePath}`);
 
         const primaryKey = core.getInput(Inputs.Key, { required: true });
-        core.saveState(State.CacheKey, primaryKey);
-
+        
         const restoreKeys = core.getInput(Inputs.RestoreKeys).split("\n");
         const keys = [primaryKey, ...restoreKeys];
 
